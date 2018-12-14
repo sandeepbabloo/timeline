@@ -1,0 +1,293 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://www.wptimeline.io/jqueryversion/demo/css/demo/reset.css"> -->
+    <link rel="stylesheet" href="https://www.wptimeline.io/jqueryversion/demo/css/plugins/animate.min.css">
+    <link rel="stylesheet" href="https://www.wptimeline.io/jqueryversion/demo/css/plugins/jquery.mCustomScrollbar.min.css">
+    <!-- CSS Animation -->
+    <link rel="stylesheet" href="https://www.wptimeline.io/jqueryversion/demo/css/default.min.css">
+    <!-- Resource style -->
+    <link rel="stylesheet" href="https://www.wptimeline.io/jqueryversion/demo/css/demo/demo.css">
+    <link rel="stylesheet" href="https://www.wptimeline.io/jqueryversion/demo/css/frst-timeline-style-3.css">
+    <!-- Resource style -->
+    <script src="https://www.wptimeline.io/jqueryversion/demo/js/modernizr.js"></script>
+</head>
+  <style>
+  button{
+          background-color:#6674A3;
+          padding: 10px;
+          /*border-radius:5px;*/
+        }
+        p{
+          color:white;
+        }
+        .fa{
+          border-radius:50%;
+          color:white;
+        }
+        h1{
+          color:white;
+          text-align: center;
+        }
+        label{
+          color:white;
+        }
+</style>
+    <style type="text/css">
+      
+#cd-vertical-nav1 {
+        position: fixed;
+        right: 40px;
+        top: 50%;
+        bottom: auto;
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+        transform: translateY(-50%);
+        z-index: 1;
+      }
+#enroll-your-startup {
+    -ms-flex-align: center;
+    -webkit-box-align: center;
+    align-items: center;
+    background-color: #3770FF;
+    border-radius: 3px;
+    border: none;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+    font-size: 18px;
+    font-weight: 600;
+    padding: 12px 20px;
+    text-align: center;
+}
+
+#enroll-your-startup:not([disabled]) {
+    cursor: pointer;
+}
+
+#enroll-your-startup:hover {
+    background-color: #2954BF !important;
+}
+
+#enroll-your-startup .logo {
+    /* Please keep the color of Devfolio logo mark either white (#FFFFFF) or black (#000000) */
+    fill: white ;
+}
+.section-title:before {
+  background-color:white !important;
+}
+.section-title:after {
+  background-color:white !important;
+}
+.turqoise{
+  background-color: #58638F !important;
+}
+.light-blue{
+  background-color: #3D4066 !important;
+}
+.frst-timeline-style-3 .frst-timeline-content-inner.light-blue::after {
+    border-right-color: #3d4066 !important;
+}
+.frst-timeline-style-3 .frst-timeline-content-inner::after {
+
+    top: 43px !important;
+}
+.frst-timeline-style-3 .frst-timeline-content-inner::before {
+    border-width: 0px 0px 0px 0 !important;
+}
+@media only screen and (min-width: 679px){
+.frst-timeline-style-3.frst-alternate .frst-odd-item .frst-timeline-content-inner::before {
+    border-width: 0px 0 0px 0px;
+}
+@media only screen and (min-width: 679px){
+.frst-timeline-style-3.frst-alternate .frst-odd-item .frst-timeline-content-inner::after {
+    border-left-color: #58638f !important;
+}
+
+    </style>
+<body>
+    <div id="page">
+
+        </div>
+        <header class="site-header" style="display:none">
+           
+                              
+                    <div class="custom-options">
+                        <div class="animation-selector">
+                            <select class="select-animation" id="select-animation">
+                                <!-- <option value="">No Animation</option> -->
+                                
+                                <!-- <optgroup label="Sliding effects"> -->
+                                    <option value="slideInUp">slideInUp</option>
+                                    
+                                <!-- </optgroup> -->
+                               
+                            </select>
+                        </div>
+                        <!-- .animation-selector -->
+                        <ul class="button-group style-class-switch">
+                            <li class="active"><a href="#" data-styleclass="right-align">Alternate</a></li>
+                            <!-- <li><a href="#" data-styleclass="alternate">Right</a></li>
+                            <li><a href="#" data-styleclass="left-align">Left</a></li> -->
+                        </ul>
+                        <div class="check-style" style="display:none;visibility:hidden">
+                            <label for="dateToggle">
+                                <input type="checkbox" name="dateToggle" id="dateToggle" checked=""> <span></span> Show Date Opposite </label>
+                        </div>
+                        
+                    </div>
+                    <!-- .custom-options -->
+                </div>
+                <!-- .container -->
+            </div>
+                    <!-- .style-switch -->
+                </div>
+                <!-- .container -->
+            </div>
+            <!-- .header-top -->
+       
+            <!-- .header-cutomizations -->
+        </header>
+        <div class="frst-container">
+            <!-- frst-left-align/frst-right-align/frst-alternate/frst-date-opposite-->
+            <div class="frst-timeline frst-timeline-style-3 frst-alternate">
+                <div class="frst-timeline-block frst-odd-item" data-animation="slideInUp">
+                    <div class="frst-timeline-img"> <span class="turqoise"></span> </div>
+                    <!-- frst-timeline-img -->
+                    <div class="frst-timeline-content effect1">
+                        <div class="frst-timeline-content-inner turqoise"> <span class="frst-date">19th December 2019</span> <span class="icon-section">
+                                <!-- -->
+                            </span>
+                            <div class="text-section">
+                                <h2>Phase 1 Companies Launch</h2>
+                            </div>
+                        </div>
+                        <!-- frst-timeline-content-inner -->
+                    </div>
+                    <!-- frst-timeline-content -->
+                </div>
+                <!-- frst-timeline-block -->
+                <div class="frst-timeline-block frst-even-item" data-animation="slideInUp">
+                    <div class="frst-timeline-img"> <span class="light-blue"></span> </div>
+                    <!-- frst-timeline-img -->
+                    <div class="frst-timeline-content effect2">
+                        <div class="frst-timeline-content-inner light-blue"> <span class="frst-date">27th December 2019</span> <span class="icon-section">
+                               
+                            </span>
+                            <div class="text-section">
+                                <h2>Phase 2 companies Launch</h2>
+                                <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lobortis est sit amet augue aliquam vestibulum. Donec tempus erat in gravida dapibus. </p> -->
+                            </div>
+                        </div>
+                        <!-- frst-timeline-content-inner -->
+                    </div>
+                    <!-- frst-timeline-content -->
+                </div>
+                <div class="frst-timeline-block frst-odd-item" data-animation="slideInUp">
+                    <div class="frst-timeline-img"> <span class="turqoise"></span> </div>
+                    <!-- frst-timeline-img -->
+                    <div class="frst-timeline-content effect1">
+                        <div class="frst-timeline-content-inner turqoise"> <span class="frst-date">19th December 2019</span> <span class="icon-section">
+                                <!-- -->
+                            </span>
+                            <div class="text-section">
+                                <h2>Phase 1 Companies Launch</h2>
+                            </div>
+                        </div>
+                        <!-- frst-timeline-content-inner -->
+                    </div>
+                    <!-- frst-timeline-content -->
+                </div>
+                <!-- frst-timeline-block -->
+                <div class="frst-timeline-block frst-even-item" data-animation="slideInUp">
+                    <div class="frst-timeline-img"> <span class="light-blue"></span> </div>
+                    <!-- frst-timeline-img -->
+                    <div class="frst-timeline-content effect2">
+                        <div class="frst-timeline-content-inner light-blue"> <span class="frst-date">27th December 2019</span> <span class="icon-section">
+                               
+                            </span>
+                            <div class="text-section">
+                                <h2>Phase 2 companies Launch</h2>
+                                <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lobortis est sit amet augue aliquam vestibulum. Donec tempus erat in gravida dapibus. </p> -->
+                            </div>
+                        </div>
+                        <!-- frst-timeline-content-inner -->
+                    </div>
+                    <!-- frst-timeline-content -->
+                </div>
+                <div class="frst-timeline-block frst-odd-item" data-animation="slideInUp">
+                    <div class="frst-timeline-img"> <span class="turqoise"></span> </div>
+                    <!-- frst-timeline-img -->
+                    <div class="frst-timeline-content effect1">
+                        <div class="frst-timeline-content-inner turqoise"> <span class="frst-date">19th December 2019</span> <span class="icon-section">
+                                <!-- -->
+                            </span>
+                            <div class="text-section">
+                                <h2>Phase 1 Companies Launch</h2>
+                            </div>
+                        </div>
+                        <!-- frst-timeline-content-inner -->
+                    </div>
+                    <!-- frst-timeline-content -->
+                </div>
+                <!-- frst-timeline-block -->
+                <div class="frst-timeline-block frst-even-item" data-animation="slideInUp">
+                    <div class="frst-timeline-img"> <span class="light-blue"></span> </div>
+                    <!-- frst-timeline-img -->
+                    <div class="frst-timeline-content effect2">
+                        <div class="frst-timeline-content-inner light-blue"> <span class="frst-date">27th December 2019</span> <span class="icon-section">
+                               
+                            </span>
+                            <div class="text-section">
+                                <h2>Phase 2 companies Launch</h2>
+                                <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lobortis est sit amet augue aliquam vestibulum. Donec tempus erat in gravida dapibus. </p> -->
+                            </div>
+                        </div>
+                        <!-- frst-timeline-content-inner -->
+                    </div>
+                    <!-- frst-timeline-content -->
+                </div>
+
+                <!-- frst-timeline-block -->
+               
+                <!-- frst-timeline-block -->
+            </div>
+            <!-- frst-timeline -->
+        </div>
+        <!-- .frst-container -->
+    </div>
+    <!-- #page-->
+    <script src="https://www.wptimeline.io/jqueryversion/demo/js/jquery-3.1.1.min.js"></script>
+     <script src="https://www.wptimeline.io/jqueryversion/demo/js/jquery.mousewheel.min.js"></script>
+     <script src="https://www.wptimeline.io/jqueryversion/demo/js/jquery.mousewheel-3.0.6.min.js"></script>
+     <script src="https://www.wptimeline.io/jqueryversion/demo/js/jquery.mCustomScrollbar.min.js"></script>
+    <script src="https://www.wptimeline.io/jqueryversion/demo/js/frst-timeline.js"></script>
+     <script>
+        
+		(function($){
+			$(document).ready(function (){				
+				$("#side-menu-content").mCustomScrollbar({
+					theme:"rounded-dots",
+					scrollInertia:800
+				});
+				
+			});
+		})(jQuery);
+	
+    </script>
+
+</body>
+
+</html>
